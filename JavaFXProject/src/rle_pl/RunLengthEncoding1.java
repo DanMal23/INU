@@ -31,7 +31,7 @@ public class RunLengthEncoding1 extends Application {
 		Scene scene = new Scene(root, 510, 370);
 		scene.getStylesheets().add(getClass().getResource("encStyle.css").toExternalForm());
 
-		Label lab1 = new Label("èrÛd≥o");
+		Label lab1 = new Label("Zrodlo");
 		lab1.setId("lab1");
 		lab1.setLayoutX(50);
 		lab1.setLayoutY(20);
@@ -112,7 +112,7 @@ public class RunLengthEncoding1 extends Application {
 				String t1 = text1source.getText().toString();
 				text2result.setText(t1);
 			} else if (r1.isSelected() == false | r2.isSelected() == false) {
-				Alert alert = new Alert(AlertType.INFORMATION, "Wybierz operacjÍ.");
+				Alert alert = new Alert(AlertType.INFORMATION, "Wybierz operacje.");
 				alert.setTitle("info");
 				alert.show();
 			}
