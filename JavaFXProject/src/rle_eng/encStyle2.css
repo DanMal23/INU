@@ -1,0 +1,98 @@
+.root {
+	-fx-background-color: rgb(200, 200, 200);
+}
+
+#btn1copy {
+	-fx-background-color: rgb(250, 240, 240);
+	-fx-border-style: dashed;
+	-fx-font: 15pt 'verdana';
+}
+
+#btn2execute {
+	-fx-background-color: rgb(250, 240, 240);
+	-fx-border-style: dashed;
+	-fx-font: 15pt 'verdana';
+}
+#btn3clear {
+	-fx-background-color: rgb(250, 240, 240);
+	-fx-border-style: dashed;
+	-fx-font: 15pt 'verdana';
+}
+#text1 {
+	-fx-background-color: rgb(250, 244, 244);
+	-fx-font: 14pt 'verdana';
+	-fx-text-fill: black;
+	-fx-pref-width: 250px;
+	-fx-text-fill: black;
+}
+
+#text1:hover {
+	-fx-border-color: gray;
+	-fx-border-insets: 2, 2, 2, 2;
+}
+
+#text2 {
+	-fx-background-color: rgb(250, 244, 244);
+	-fx-font: 14pt 'verdana';
+	-fx-text-fill: black;
+	-fx-pref-width: 250px;
+}
+
+#text2:hover {
+	-fx-border-color: gray;
+	-fx-border-insets: 2, 2, 2, 2;
+}
+
+#lab1 {
+	-fx-font: 17pt 'verdana';
+}
+
+#lab2 {
+	-fx-font: 17pt 'verdana';
+}
+
+#lab3 {
+	-fx-font: 16pt 'verdana';
+}
+
+#r1 {
+	-fx-font: 15pt 'verdana';
+	-fx-skin: "com.sun.javafx.scene.control.skin.RadioButtonSkin";
+	-fx-label-padding: 0.0em 0.0em 0.0em 0.416667em; 
+}
+#r2 {
+	-fx-font: 15pt 'verdana';
+	}
+
+#r1:hover {
+	-fx-stroke: green;
+	-fx-background-insets: 3, 3, 3, 3;
+}
+
+#r1:selected .dot {
+	-fx-background-color: -fx-mark-highlight-color;
+	-fx-background-color: #483d8b;
+}
+
+#r2:selected .dot {
+	-fx-background-color: -fx-mark-highlight-color;
+	-fx-background-color: #483d8b;
+}
+
+#r1:selected:focused .radio {
+	-fx-background-color: -fx-focus-color, -fx-outer-border,
+		-fx-inner-border, -fx-body-color;
+}
+
+#r2:selected:focused .radio {
+	-fx-background-color: -fx-focus-color, -fx-outer-border,
+		-fx-inner-border, -fx-body-color;
+}
+
+#r1:armed .radio {
+	-fx-color: #f4ee60;
+}
+
+#r2:armed .radio {
+	-fx-color: #f4ee60;
+}
