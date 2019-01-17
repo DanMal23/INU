@@ -1,0 +1,47 @@
+
+.background {
+	-fx-background-color: #ccc7d1;	
+}
+#tableView {
+	-fx-selection-bar: #998fa3;
+	-fx-selection-bar-non-focused: #a69daf;
+	
+}
+#langTextfield {
+	-fx-background-color: rgb(250.0, 244.0, 244.0);
+	-fx-border-color: gray;
+}
+#langTextfield:hover {
+	-fx-border-color: gray;
+	-fx-border-insets: 2.0, 2.0, 2.0, 2.0;
+}
+#yearTextfield {
+	-fx-background-color: rgb(250.0, 244.0, 244.0);
+	-fx-border-color: gray;
+}
+#yearTextfield:hover {
+	-fx-border-color: gray;
+	-fx-border-insets: 2.0, 2.0, 2.0, 2.0;
+}
+#devTextfield {
+	-fx-background-color: rgb(250.0, 244.0, 244.0);
+	-fx-border-color: gray;
+}
+#devTextfield:hover {
+	-fx-border-color: gray;
+	-fx-border-insets: 2.0, 2.0, 2.0, 2.0;
+}
+#clearButton {	 
+	 -fx-focus-color:#995cd6;
+}
+#addButton {
+	-fx-focus-color:#995cd6;
+}
+#deleteRowButton {
+	-fx-focus-color:#995cd6;
+}
+#closeStage {
+	-fx-accent:#995cd6;
+	-fx-focus-color:#995cd6;
+	-fx-highlight-fill:#995cd6;
+}
