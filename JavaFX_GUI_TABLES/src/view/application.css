@@ -1,0 +1,87 @@
+/** modena.css used */
+.root {
+    -fx-background-color: #6f9985;
+}
+.button {
+    -fx-font: 15.0px "Verdana";
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 5.0;
+    -fx-background-color: #446354;
+    -fx-effect: dropshadow(two-pass-box, #423c33, 15.0, 0.0 , 6.0, 6.0);
+    -fx-background-radius: 6.0;
+}
+
+.label {
+    -fx-font: 15.0px "Verdana";
+    -fx-text-fill: #f2f2f2;
+    -fx-text-alignment: left;
+}
+.table-view {	
+	-fx-table-cell-border-color: #e6efeb;
+    -fx-table-header-border-color: green;  
+	-fx-selection-bar: #a1c6b4;
+	-fx-selection-bar-non-focused: #c3dbcf;
+	-fx-border-color: green,
+        derive(-fx-base, 90.0%) 
+}
+.table-view .column-header-background {
+    -fx-background-color: green;
+}
+.table-view .column-header .label {
+    -fx-font-size: 10.0pt;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: #8cad9f;
+}
+.text-field {
+	-fx-focus-color:#44d68d;
+}
+.date-picker {
+    -fx-focus-color:#39b580;   
+}
+.date-picker > .arrow-button {
+    -fx-background-color: #afd6c5;
+    }
+.date-picker-popup > .month-year-pane {
+	-fx-background-color:#6f9985;
+}  
+.date-picker .day-name-cell {
+    -fx-padding: 3.0px ;
+    -fx-background-color: #d0e2da;
+}
+.date-picker-popup > * > .spinner > .button {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0.0, 1.0, 1.0;
+    -fx-color: #b9ccc3;
+    -fx-background-radius: 2.0;
+}
+ .date-picker-popup > * > .week-number-cell {
+	/*-fx-background-color:#d0e2da;*/
+	-fx-text-fill: #6f9985;
+}
+.date-picker-popup > * > .selected {
+	-fx-text-fill: white;
+	-fx-background-color: #59b78d;
+}
+ .date-picker-popup > * > .today {
+ 	-fx-background-color: -fx-control-inner-background, 
+ 	derive(-fx-selection-bar-non-focused, -20.0%),
+ 	 -fx-control-inner-background;
+ 	-fx-focus-color:#39b580;
+}
+
+ .date-picker-popup > * > .day-cell:focused:hover {
+ 	-fx-background-color: #41c68b;
+ }
+   
+ .date-picker-popup > * > .day-cell:hover {
+ 	-fx-background-color: #6f9985;
+ }   
+
+
+
+
+
+
+
+
+    

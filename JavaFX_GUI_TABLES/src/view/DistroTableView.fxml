@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="610.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LinuxDistroTableController">
+   <children>
+      <VBox layoutX="26.0" layoutY="19.0" prefHeight="570.0" prefWidth="408.0" spacing="10.0">
+         <children>
+            <Label text="Linux Distribution Table">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" onMouseClicked="#clickedTable" prefHeight="410.0" prefWidth="472.0">
+              <columns>
+                <TableColumn fx:id="distroNameColumn" onEditCommit="#changeDistroNameCellEvent" prefWidth="98.40002822875977" text="Linux Distro" />
+                <TableColumn fx:id="yearColumn" onEditCommit="#changeYearCellEvent" prefWidth="94.39996337890625" text="Year" />
+                  <TableColumn fx:id="developerNameColumn" onEditCommit="#changeDevNameCellEvent" prefWidth="235.99998474121094" text="Developer" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="517.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="distroNameTextField" prefHeight="26.0" prefWidth="125.0" promptText="distro" />
+                  <TextField fx:id="yearTextField" prefHeight="26.0" prefWidth="122.0" promptText="year" />
+                  <TextField fx:id="developerNameTextField" prefHeight="26.0" prefWidth="98.0" promptText="developer" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="518.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#backToMain" prefHeight="38.0" prefWidth="76.0" text="Back" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="470.0" layoutY="76.0" prefHeight="189.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newDistroButton" prefHeight="34.0" prefWidth="100.0" text="Add Distro" />
+            <Button mnemonicParsing="false" onAction="#deleteButton" prefHeight="30.0" prefWidth="126.0" text="Delete Row" />
+            <Button fx:id="detailedDistroViewButton" graphicTextGap="7.0" mnemonicParsing="false" onAction="#changeSceneToDetailedDistroView" prefHeight="58.0" prefWidth="100.0" text="Detailed Info" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </VBox>
+      <Button layoutX="450.0" layoutY="528.0" mnemonicParsing="false" onAction="#closeScene" prefHeight="38.0" prefWidth="126.0" text="Close App" wrapText="true" />
+   </children>
+</AnchorPane>
