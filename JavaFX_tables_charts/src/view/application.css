@@ -1,0 +1,45 @@
+/** modena.css used */
+.root {
+    -fx-background-color: #99846f;
+}
+.button {
+    -fx-font: 15.0px "Verdana";
+    -fx-text-fill: #f2f2f2;
+    -fx-padding: 5.0;
+    -fx-background-color: #5b5147;
+    -fx-effect: dropshadow(two-pass-box, #423c33, 15.0, 0.0 , 6.0, 6.0);
+    -fx-background-radius: 6.0;
+}
+
+.label {
+    -fx-font: 15.0px "Verdana";
+    -fx-text-fill: #f2f2f2;
+    -fx-text-alignment: left;
+}
+.table-view {	
+	-fx-table-cell-border-color: #ddd2c7;
+    -fx-table-header-border-color: brown;  
+	-fx-selection-bar: #a89686;
+	-fx-selection-bar-non-focused: #c6b6a7;
+	-fx-border-color: brown,
+        derive(-fx-base, 90.0%) 
+}
+.table-view .column-header-background {
+    -fx-background-color: brown;
+}
+.table-view .column-header .label {
+    -fx-font-size: 10.0pt;
+    -fx-font-family: "Verdana";
+    -fx-text-fill: #a89381;
+}
+.text-field {
+	-fx-focus-color:#a38265;
+}
+.default-color0.chart-bar { 
+	-fx-bar-fill: #82b1cc;
+}	
+.chart-legend {
+	-fx-background-color: #99846f;
+	 -fx-padding: 16px;
+}
+	
